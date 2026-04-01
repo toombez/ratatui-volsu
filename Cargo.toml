@@ -1,0 +1,66 @@
+[package]
+name = "ratatui-volsu"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# bevy = { version = "0.18.1", default-features = false, features = ["bevy_state"] }
+# bevy_ratatui = "0.11.1"
+# bevy_ratatui_camera = "0.16.0"
+clap = { version = "4.5.60", features = ["derive"] }
+color-eyre = "0.6.5"
+crossterm = "0.29.0"
+futures = "0.3.32"
+qrcode = "0.14.1"
+rand = "0.8.0"
+ratatui = "0.30.0"
+ratatui-explorer = "0.3.0"
+# ratzilla = "0.3.0"
+tachyonfx = "0.25.0"
+tokio = { version = "1.50.0", features = ["full"] }
+tui-piechart = "0.3.1"
+tui-qrcode = "0.2.2"
+
+tuirealm = { version = "3", default-features = false, features = [ "derive", "serialize", "crossterm" ] }
+walkdir = "2.5.0"
+
+# tui-textarea = "0.7.0"
+
+# [patch.crates-io]
+# unicode-width = "=0.2.2"
+
+[[bin]]
+name = "playground"
+path = "src/playground/main.rs"
+
+[[bin]]
+name = "intro"
+path = "src/01.intro/main.rs"
+
+[[bin]]
+name = "layouts"
+path = "src/02.layouts/main.rs"
+
+[[bin]]
+name = "widgets"
+path = "src/03.widgets/main.rs"
+
+[[bin]]
+name = "styles"
+path = "src/04.styles/main.rs"
+
+[[bin]]
+name = "events"
+path = "src/05.events/main.rs"
+
+[[bin]]
+name = "custom-widgets"
+path = "src/06.custom-widgets/main.rs"
+
+[[bin]]
+name = "animations"
+path = "src/07.animations/main.rs"
+
+[[bin]]
+name = "arch"
+path = "src/08.arch/main.rs"
