@@ -29,6 +29,8 @@ walkdir = "2.5.0"
 # [patch.crates-io]
 # unicode-width = "=0.2.2"
 
+image = "0.25.10"
+
 [[bin]]
 name = "playground"
 path = "src/playground/main.rs"
@@ -64,3 +66,7 @@ path = "src/07.animations/main.rs"
 [[bin]]
 name = "arch"
 path = "src/08.arch/main.rs"
+
+[[bin]]
+name = "realm"
+path = "src/09.realm/main.rs"
